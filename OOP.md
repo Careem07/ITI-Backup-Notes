@@ -4,3 +4,6 @@
 
 -Template class creates a new class with passed datatype
 eg : Stack<int> , Stack<float> it creates 2 new classes with different datatypes
+  
+  
+ - Method Hiding Vs Method overriding 
