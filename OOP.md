@@ -25,6 +25,9 @@
    but calling the method with int parameter is fine
  
  - If virtual keyword only in parent (Rect) and the pointer from grandparent (geoShape) point to child (square) this is not dynamic binding
-  geoShape*p = &Square s => implement from geoShape. 
-  Rect *p = & Square s => implement from Square. 
-  geoShape*p = &Rect r => implement from geoShape.
+  
+geoShape*p = &Square s => implement from geoShape. 
+ 
+ Rect *p = & Square s => implement from Square. 
+ 
+ geoShape*p = &Rect r => implement from geoShape.
