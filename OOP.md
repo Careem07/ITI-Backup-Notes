@@ -24,7 +24,7 @@
    calling the method with float parameter2 raises an error: call of overloaded ‘method(double)’ is ambiguous
    but calling the method with int parameter is fine
  
- - If virtual only in parent (Rect) and the pointer from grandparent(geoShape)point to child this is not dynamic binding
+ - If virtual keyword only in parent (Rect) and the pointer from grandparent(geoShape)point to child this is not dynamic binding
   geoShape*p = &Square s => implement from geoShape. 
   Rect *p = & Square s => implement from Square. 
   geoShape*p = &Rect r => implement from geoShape.
