@@ -31,3 +31,8 @@ geoShape*p = &Square s => implement from geoShape.
  Rect *p = & Square s => implement from Square. 
  
  geoShape*p = &Rect r => implement from geoShape.
+ 
+ 
+ - Rectangle r = r2  -> copy constructor
+   Rectangle r;
+   r = r2           -> Assignment operator
