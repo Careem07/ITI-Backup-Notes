@@ -38,5 +38,4 @@ geoShape*p = &Square s => implement from geoShape.
    Rectangle r;
  
    r = r2           -> Assignment operator
-
- -the string litral cannot be reassigned to another set of characters, whereas we can reassign the characters of the array  
+ 
