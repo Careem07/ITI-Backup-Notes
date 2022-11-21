@@ -17,6 +17,8 @@ Complex comp(); → error no default constructor
 - Only one destructor in class
 - Last behavior in object life cycle
 - Deallocate resources 
+- not responsbile for deleting object from memory 
+- last function is called before de allocating
 
 # Inline function
 
