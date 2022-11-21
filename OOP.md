@@ -44,8 +44,12 @@ geoShape*p = &Square s => implement from geoShape.
    function(Complex &x) -> pass by reference no call for copy constructor
  
  - to return array from function return as pointer if array declared in the function should be static
+ 
      int *display(){
+ 
                 int arr[50] = {0}; //error should be static int arr[50]
+ 
                 return arr;
           }
+ 
     why => because if it's not static its scope will be end with end of function so should be static to put it in heap memory not in stack 
