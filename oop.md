@@ -1,4 +1,7 @@
 # ITI-Backup-Notes
+# check this link if you want to read it in drive
+https://docs.google.com/document/d/1-WFFJBt-nRIOkRvaxR6s1NZFjNaC69UnRl3LwO0vu9c/edit?usp=sharing
+
 # C/CPP Notes
 # Constructor
 
