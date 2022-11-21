@@ -45,7 +45,9 @@ geoShape*p = &Square s => implement from geoShape.
  
  - to return array from function return as pointer if array declared in the function should be static
  
-     int *display(){
+ 
+          int *display(){
+ 
                 int arr[50] = {0}; //error should be static int arr[50]
  
                 return arr;
