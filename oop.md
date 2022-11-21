@@ -31,7 +31,7 @@ Complex comp(); → error no default constructor
 
 # Example what happen when call,return by value and create object
 
-- //class
+//class
 Complex add(complex c) //call by value , call copy constructor
 {
 Complex temp; //create temp object, call default constructor
@@ -40,11 +40,11 @@ temp.real=this->real+c.real;
 temp.img=img+c.img;
 Return temp; // return by value,call copy constructor
 }
-- //After call ending
+//After call ending
 //Call destructor for temp
 //Call destructor for arguments 
 
-- //main
+//main
 Complex c1,c2,c4;
 Complex c3=c2.add(c1);   
 //optimization create c3 object and assign return in it
@@ -63,7 +63,7 @@ C2.real; // error not accessible
 - Instance members can deal with static members, and not virus wise.
 - Because, static members in memory once class creation and terminate at the end of program, before any object creation so how do static members deal with members that don't exist ? 
 
-- //class
+//class
 
 1)error can’t initialize a class member here 
 Static int counter=0; 
@@ -75,7 +75,7 @@ If not initialize it will cause linker error
 
 Int Stack::counter=0;
 
-- //main 
+//main 
 stack::counter=0 // error not accessible (private)
 
 4) must call public members in main
@@ -93,10 +93,10 @@ Stack::getCounter();
 - If in destructor delete [] ptr;
 
 # overloading
-- //class
+//class
 Return Complex(real+c.real,img+c.img); // create temp object then return it without destroy it
 
-- //main
+//main
 Complex c1,c2,c3
 Complex c4=c1+c2 //return object will be c4 and don’t destroy it
 c3=c1+c2; //take object in c3 then destroy return object
