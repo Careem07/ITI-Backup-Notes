@@ -1,6 +1,6 @@
 # ITI-Backup-Notes
 # C/CPP Notes
-# #Constructor
+# Constructor
 
 //class
 complex(float r){}
@@ -9,19 +9,19 @@ complex(float r,float i){}
 //main
 Complex comp(); → error no default constructor
 
-Destructor 
+# Destructor 
 
 Only one destructor in class
 Last behavior in object life cycle
 Deallocate resources 
 
-Inline function
+# Inline function
 
 Method implementation in class
 Simple method no loops
 Like text replacement
 
-Copy constructor
+# Copy constructor
 
 Shallow(default) - deep (user creation)
 Call by value
@@ -29,7 +29,7 @@ Return by value
 Create object from another object (=)
 Classname classname(classname &obj ){ }
 
-Example what happen when call,return by value and create object
+# Example what happen when call,return by value and create object
 
 //class
 Complex add(complex c) //call by value , call copy constructor
@@ -56,7 +56,7 @@ c2.add(c1);
 
 C2.real; // error not accessible
 
-Static members
+# Static members
 
 One copy in class, shared by all members 
 Instance members can deal with static members, and not virus wise.
