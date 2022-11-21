@@ -39,3 +39,7 @@ geoShape*p = &Square s => implement from geoShape.
  
    r = r2           -> Assignment operator
  - Protected Class -> functions and attributes cannot be accessed in main just inside class
+ 
+ - function(Complex x) -> calls copy constructor for parameters
+   function(Complex &x) -> pass by reference no call for copy constructor
+ 
