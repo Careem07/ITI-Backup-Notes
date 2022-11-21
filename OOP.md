@@ -38,4 +38,4 @@ geoShape*p = &Square s => implement from geoShape.
    Rectangle r;
  
    r = r2           -> Assignment operator
- 
+ - Protected Class -> functions and attributes cannot be accessed in main just inside class
