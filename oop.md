@@ -34,11 +34,11 @@ Complex comp(); → error no default constructor
 - //class
 Complex add(complex c) //call by value , call copy constructor
 {
-	Complex temp; //create temp object, call default constructor
-	temp.real=this->real+c.real; 
+Complex temp; //create temp object, call default constructor
+temp.real=this->real+c.real; 
 // c.real and real private member with no error because implementation in class
-	temp.img=img+c.img;
-	Return temp; // return by value,call copy constructor
+temp.img=img+c.img;
+Return temp; // return by value,call copy constructor
 }
 - //After call ending
 //Call destructor for temp
@@ -46,8 +46,9 @@ Complex add(complex c) //call by value , call copy constructor
 
 - //main
 Complex c1,c2,c4;
-Complex c3=c2.add(c1);   //optimization create c3 object and assign return in it
-                                          //consider the return object is c3. So doesn’t destruct it 
+Complex c3=c2.add(c1);   
+//optimization create c3 object and assign return in it
+//consider the return object is c3. So doesn’t destruct it 
 
 //take return then call destructor for copy, doesn't need this object anymore
 c4=c2.add(c1);               
@@ -64,19 +65,16 @@ C2.real; // error not accessible
 
 - //class
 
-1)
-// error can’t initialize a class member here 
+1)error can’t initialize a class member here 
 Static int counter=0; 
 Or 
 Int size=10;
 
-2)
-Must initialize outside the class using scope operators ::
+2)Must initialize outside the class using scope operators ::
 If not initialize it will cause linker error
 
 Int Stack::counter=0;
 
-3)
 - //main 
 stack::counter=0 // error not accessible (private)
 
